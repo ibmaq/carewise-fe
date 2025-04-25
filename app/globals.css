@@ -6,21 +6,211 @@
 }
 
 @theme inline {
+  --font-openSans: var(--font-openSans);
+  --font-montserrat: var(--font-montserrat);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-blue: #0247a0;
+  --color-c-blue: #afdbf6;
+  --color-c-blue-2: #c2e8ff;
+  --color-c-green: #abd9cd;
+  --color-c-yellow: #f2f6af;
+  --color-c-gray: #475467;
+  --color-c-text: #101828;
+  --color-c-text-2: #222222;
+  --color-c-text-3: #14151a;
+  --color-c-text-4: #0f1324;
+  --color-c-text-5: #013d51;
+
+  --text-8: 32px;
+  --text-6.5: 26px;
+  --text-10.5: 42px;
+  --text-20.5: 82px;
+
+  --leading-1.2: 120%;
+  --leading-1.3: 130%;
+  --leading-1.4: 140%;
+
+  --tracking-1: 1px;
+  --tracking-2: 2px;
+
+  --max-width-navbar: 777px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-openSans), sans-serif;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  max-height: 756px;
+  background-image: url("/images/hero-bg-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-height: 1024px;
+    background-image: url("/images/hero-bg-2.webp");
+  }
+}
+.hero .content-container {
+  width: 100%;
+  max-width: 810px;
+}
+.c-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.c-container-px {
+  width: 100%;
+  max-width: 1280px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .c-container {
+    padding-inline: 0;
+  }
+  .c-container-px {
+    padding-inline: 2rem;
+  }
+}
+.testimonials {
+  background-image: url("/logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+.c-btn {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .c-btn {
+    width: fit-content;
+    justify-content: left;
+  }
+}
+.c-btn.btn-pr {
+  color: white;
+  background-color: var(--color-primary-blue);
+  border-color: transparent;
+}
+.c-btn.btn-sc {
+  color: var(--color-c-text-3);
+  background-color: white;
+  border-color: #dee0e3;
+}
+.image-banner {
+  width: 100%;
+  height: 156px;
+  background-image: url("/images/banner-img-landing.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.image-banner.contact {
+  background-image: url("/images/banner-img-contact.webp");
+}
+@media screen and (min-width: 768px) {
+  .image-banner {
+    height: 306px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1919px) {
+  .image-banner.contact {
+    background-position: 0 -200px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .image-banner.contact {
+    background-position: 0 -270px;
+  }
+}
+.blogs .header {
+  height: 100vh;
+  max-height: 520px;
+}
+.blogs .pill,
+.blog .pill {
+  padding: 4px 10px;
+  background: #0247a029;
+  border-radius: 16px;
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.5%;
+}
+.blog-container {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+}
+.blog-content h3,
+.blog-content h4 {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+.privacy-policy h4,
+.blog-content h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #14151a;
+}
+
+/* Mobile - Hamburger animation */
+.menu__icon {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+}
+
+.line {
+  transition: transform 0.18s cubic-bezier(0.04, 0.04, 0.12, 0.96),
+    opacity 0.15s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.1s;
+  transform-origin: center;
+}
+
+.line.top {
+  transform-origin: 50% 50%;
+}
+
+.line.bottom {
+  transform-origin: 50% 50%;
+}
+
+.menu__icon.active .line.top {
+  transform: rotate(45deg) translateY(5.5px);
+}
+
+.menu__icon.active .line.bottom {
+  transform: rotate(-45deg) translateY(-5.5px);
 }
