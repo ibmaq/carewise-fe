@@ -29,6 +29,7 @@ export default function Hero() {
                 ease: "easeOut",
                 delay: 0.4,
               }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               Maximise Revenue and Minimise Hassle
             </motion.span>
@@ -45,7 +46,7 @@ export default function Hero() {
             className="text-xl/1.4"
           >
             We help healthcare providers streamline revenue, reduce denials, and
-            get paid faster without the stress
+            get paid faster without the stress.
           </motion.p>
           <div className="flex max-md:flex-col gap-4">
             <Link href={"/contact"}>
@@ -55,7 +56,7 @@ export default function Hero() {
                 transition={{
                   duration: 0.8,
                   ease: "easeOut",
-                  delay: 1,
+                  delay: 1.3,
                 }}
                 viewport={{ once: true, amount: 0.5 }}
                 className="c-btn btn-pr"
@@ -70,7 +71,7 @@ export default function Hero() {
               transition={{
                 duration: 0.8,
                 ease: "easeOut",
-                delay: 1.5,
+                delay: 2.2,
               }}
               viewport={{ once: true, amount: 0.5 }}
               className="c-btn btn-sc"
