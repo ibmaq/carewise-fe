@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { rightArrowIcon } from "./UI/icons";
 import Link from "next/link";
@@ -7,7 +9,16 @@ export default function CTA() {
     <section className="py-20">
       <div className="c-container-px">
         <div className="bg-primary-blue rounded-2xl p-8 flex max-md:flex-col-reverse gap-8">
-          <div className="flex flex-col grow justify-between">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: "easeOut",
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="flex flex-col grow justify-between"
+          >
             <div className="flex flex-col gap-8 text-white">
               <Image
                 src={"/logo-white.png"}
@@ -26,7 +37,7 @@ export default function CTA() {
                 <span>{rightArrowIcon}</span>
               </button>
             </Link>
-          </div>
+          </motion.div>
           <Image
             src={"/images/cta-image.webp"}
             alt="shaking-hands"

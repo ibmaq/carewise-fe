@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+import { solutionsData } from "@/app/(pages)/(landing)/data";
 import { solutionIcon1, solutionIcon2, solutionIcon3 } from "../UI/icons";
 
 export default function Solutions() {
@@ -13,83 +16,52 @@ export default function Solutions() {
           </p>
         </div>
         <div className="flex max-md:flex-col gap-10 md:py-8">
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon1}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                Insurance Claims Processing
-              </h4>
-              <p className="text-base/1.4">
-                We handle all aspects of insurance claim submissions, ensuring
-                accuracy and reducing the risk of delays or rejections.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon2}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                Enrolment & Credentialing
-              </h4>
-              <p className="text-base/1.4">
-                We help healthcare providers get enrolled with insurance
-                networks and maintain their credentials. Our team ensures
-                accurate, timely submissions to avoid delays and keep your
-                practice running smoothly
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon3}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                Revenue Cycle Management
-              </h4>
-              <p className="text-base/1.4">
-                We manage the entire billing lifecycle, from patient intake to
-                final payment, to improve cash flow and reduce billing errors.
-              </p>
-            </div>
-          </div>
+          {solutionsData.slice(0, 3).map((solution, solutionIndex) => (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: solutionIndex * 0.2,
+              }}
+              viewport={{ once: true, amount: 0.1 }}
+              key={solutionIndex}
+              className="flex flex-col gap-5 w-full"
+            >
+              <span className="mx-auto">{solution.icon}</span>
+              <div className="flex flex-col gap-3 text-center">
+                <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
+                  {solution.title}
+                </h4>
+                <p className="text-base/1.4">{solution.desc}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
         <div className="flex max-md:flex-col gap-10 md:py-8">
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon3}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                EFT / ERA Enrolment
-              </h4>
-              <p className="text-base/1.4">
-                We handle your Electronic Funds Transfer and Remittance Advice
-                enrollment for quicker payments and easier reconciliation.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon1}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                Denial Management Resolution
-              </h4>
-              <p className="text-base/1.4">
-                We swiftly address and resolve denied claims by identifying
-                issues and resubmitting them for faster payment processing
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-5 w-full">
-            <span className="mx-auto">{solutionIcon2}</span>
-            <div className="flex flex-col gap-3 text-center">
-              <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
-                Coding Compliance Audits
-              </h4>
-              <p className="text-base/1.4">
-                Our detailed coding audits ensure compliance with industry
-                standards, preventing costly errors and optimizing
-                reimbursement.
-              </p>
-            </div>
-          </div>
+          {solutionsData.slice(3, 6).map((solution, solutionIndex) => (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: solutionIndex * 0.2,
+              }}
+              viewport={{ once: true, amount: 0.1 }}
+              key={solutionIndex}
+              className="flex flex-col gap-5 w-full"
+            >
+              <span className="mx-auto">{solution.icon}</span>
+              <div className="flex flex-col gap-3 text-center">
+                <h4 className="font-montserrat text-2xl/1.4 font-semibold -tracking-2">
+                  {solution.title}
+                </h4>
+                <p className="text-base/1.4">{solution.desc}</p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
