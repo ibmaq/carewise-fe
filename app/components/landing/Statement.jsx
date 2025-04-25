@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 export default function Statement() {
@@ -13,7 +14,7 @@ export default function Statement() {
       className="flex flex-col gap-5 c-container-px py-20"
     >
       <p className="text-black/40 text-base font-bold">MISSION STATEMENT</p>
-      <h3 className="text-c-text text-8 md:text-5xl leading-1.3 md:-tracking-2">
+      <h3 className="text-c-text text-8 md:text-5xl leading-1.3 md:-tracking-2 font-montserrat">
         Carewise aims to empower{" "}
         <span className="font-semibold">independent healthcare providers</span>{" "}
         with smart, streamlined{" "}
