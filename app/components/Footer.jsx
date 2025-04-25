@@ -14,12 +14,10 @@ export default function Footer() {
           />
           <div className="flex flex-col grow justify-between">
             <p className="text-c-gray">
-              Carewise gives independent pharmacies the same marketing and
-              outreach firepower the chains use—tailored to your local market.
-              <br />
-              <br />
-              We help you increase referrals, strengthen doctor relationships,
-              and grow predictably—without adding to your workload.
+              CarewiseMBS aims to empower independent healthcare providers with
+              smart, streamlined billing solutions—so they can focus on care,
+              not collections. Because it's not about being louder. It's about
+              being smarter.
             </p>
             <div className="flex gap-8 items-center *:underline *:text-c-text-5 *:font-bold">
               <Link href={"/"}>Home</Link>
