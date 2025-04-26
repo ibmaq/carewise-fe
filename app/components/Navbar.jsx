@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const menuLinks = [
   { name: "Home", link: "/" },
-  { name: "Blogs", link: "/" },
+  { name: "Blogs", link: "/blogs" },
   { name: "Services", link: "/#services" },
   { name: "Privacy Policy", link: "/privacy-policy" },
 ];
@@ -134,9 +134,11 @@ const MobileNav = () => {
                 </div>
               </li>
             ))}
-            {/* <button className="mt-4 py-5 w-full text-lg/120 font-medium text-white border border-primary bg-primary hover:backdrop-blur-xl hover:bg-blue-800 hover:border-blue-800 transition-all ease-in-out duration-300">
-            Get in Touch With Us
-          </button> */}
+            <Link href={"/contact"}>
+              <button className="c-btn btn-pr hover:shadow mt-5">
+                Schedule a Consultation Now!
+              </button>
+            </Link>
           </ul>
         </div>
       </div>
