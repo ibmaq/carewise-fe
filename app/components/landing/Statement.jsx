@@ -16,11 +16,10 @@ export default function Statement() {
       <p className="text-black/40 text-base font-bold">MISSION STATEMENT</p>
       <h3 className="text-c-text text-8 md:text-5xl leading-1.3 md:-tracking-2 font-montserrat">
         CarewiseMBS aims to empower{" "}
-        <span className="font-semibold">independent healthcare providers</span>{" "}
-        with smart, streamlined{" "}
-        <span className="font-semibold">billing solutions</span>—so they can
-        focus on care, not collections. Because it's not about being louder.
-        It's about being smarter.
+        <span className="font-semibold">Healthcare Providers</span> with smart &
+        streamlined <span className="font-semibold">Billing Solutions</span> -
+        so they can focus on care, not collections. Because it's not about being
+        louder, It's about being smarter.
       </h3>
     </motion.section>
   );
