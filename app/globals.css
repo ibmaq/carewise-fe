@@ -14,6 +14,7 @@
   --color-primary-blue: #0247a0;
   --color-c-blue: #afdbf6;
   --color-c-blue-2: #c2e8ff;
+  --color-c-sky-blue: #94ddff;
   --color-c-green: #abd9cd;
   --color-c-yellow: #f2f6af;
   --color-c-gray: #475467;
@@ -35,7 +36,7 @@
   --tracking-1: 1px;
   --tracking-2: 2px;
 
-  --max-width-navbar: 777px;
+  --max-width-navbar: 1000px;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -45,6 +46,9 @@
   }
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -173,6 +177,8 @@ body {
   max-width: 720px;
   margin-inline: auto;
 }
+
+.privacy-policy h4,
 .blog-content h3,
 .blog-content h4 {
   font-family: var(--font-montserrat), sans-serif;
@@ -184,6 +190,25 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #14151a;
+}
+@media screen and (min-width: 768px) {
+  .privacy-policy h4,
+  .blogs h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+/* .privacy-policy p, */
+.privacy-policy li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4b5563;
+}
+.privacy-policy ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Mobile - Hamburger animation */

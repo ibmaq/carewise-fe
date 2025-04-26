@@ -15,7 +15,7 @@ export const solutionsData = [
   },
   {
     icon: solutionIcon2,
-    title: "Enrolment & Credentialing",
+    title: "Enrollment & Credentialing",
     desc: "We help healthcare providers get enrolled with insurance networks and maintain their credentials. Our team ensures accurate, timely submissions to avoid delays and keep your practice running smoothly.",
   },
   {
@@ -25,7 +25,7 @@ export const solutionsData = [
   },
   {
     icon: solutionIcon3,
-    title: "EFT / ERA Enrolment",
+    title: "EFT / ERA Enrollment",
     desc: "We handle your Electronic Funds Transfer and Remittance Advice enrollment for quicker payments and easier reconciliation.",
   },
   {

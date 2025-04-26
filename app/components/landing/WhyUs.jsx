@@ -24,7 +24,7 @@ export default function WhyUs() {
               delay: 0.2,
             }}
             viewport={{ once: true, amount: 0.1 }}
-            className="rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-c-yellow flex flex-col p-4 gap-20"
+            className="rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-c-sky-blue flex flex-col p-4 gap-20 w-full"
           >
             <div className="flex flex-col gap-3">
               <h4 className="font-montserrat text-8/1.2 -tracking-2">
@@ -46,7 +46,7 @@ export default function WhyUs() {
               delay: 0.4,
             }}
             viewport={{ once: true, amount: 0.1 }}
-            className="bg-primary-blue text-white flex flex-col p-4 gap-20"
+            className="bg-primary-blue text-white flex flex-col p-4 gap-20 w-full"
           >
             <div className="flex flex-col gap-3">
               <h4 className="font-montserrat text-8/1.2 -tracking-2">
@@ -55,8 +55,8 @@ export default function WhyUs() {
               <span>{whyUsIcon2}</span>
             </div>
             <p className="text-lg/1.4">
-              Clear, upfront pricing with no hidden fees, ensuring complete
-              transparency in every aspect of our service.
+              Clear pricing with no hidden fees, ensuring complete transparency
+              in every aspect of our service.
             </p>
           </motion.div>
           <motion.div
@@ -68,7 +68,7 @@ export default function WhyUs() {
               delay: 0.6,
             }}
             viewport={{ once: true, amount: 0.1 }}
-            className="rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-20"
+            className="rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-20 w-full"
           >
             <div className="flex flex-col gap-3">
               <h4 className="font-montserrat text-8/1.2 -tracking-2">

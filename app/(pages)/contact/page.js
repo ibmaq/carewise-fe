@@ -227,8 +227,8 @@ export default function Page() {
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white focus:shadow-sm"
             ></textarea>
             <p className="mt-2 text-xs/normal text-gray-500 italic">
-              By providing my phone number to “Carewise”, I agree and
-              acknowledge that “Carewise” may send text messages to my wireless
+              By providing my phone number to “CarewiseMBS”, I agree and
+              acknowledge that “CarewiseMBS” may send text messages to my wireless
               phone number for any purpose. Message and data rates may apply.
               Message frequency will vary, and you will be able to Opt-out by
               replying “STOP”. For more information on how your data will be

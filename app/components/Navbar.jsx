@@ -6,7 +6,8 @@ import { useState } from "react";
 const menuLinks = [
   { name: "Home", link: "/" },
   { name: "Blogs", link: "/" },
-  { name: "Contact", link: "/contact" },
+  { name: "Services", link: "/#services" },
+  { name: "Privacy Policy", link: "/privacy-policy" },
 ];
 export default function Navbar() {
   return (
@@ -16,14 +17,17 @@ export default function Navbar() {
           <div className="flex gap-10 items-center">
             <Link href={"/"}>
               <Image
-                src={"/logo.png"}
+                src={"/logo-wide.png"}
                 alt="carewise-logo-colored"
-                width={42}
-                height={33.2}
+                width={166}
+                height={47.35}
               />
             </Link>
-            <Link href={"/"}>Home</Link>
-            <Link href={"/blogs"}>Blogs</Link>
+            {menuLinks.map(({ name, link }, linkID) => (
+              <Link key={linkID} href={link} className="capitalize">
+                {name}
+              </Link>
+            ))}
           </div>
           <Link href={"/contact"}>
             <button className="c-btn btn-pr hover:shadow">
@@ -49,10 +53,10 @@ const MobileNav = () => {
         `}
       >
         <Image
-          src={"/logo.png"}
+          src={"/logo-wide.png"}
           alt="carewise-logo-colored"
-          width={42}
-          height={33.2}
+          width={136}
+          height={38.79}
           className={`z-1 transition-opacity duration-300 ease-linear ${
             isActive
               ? "opacity-0 pointer-events-none"

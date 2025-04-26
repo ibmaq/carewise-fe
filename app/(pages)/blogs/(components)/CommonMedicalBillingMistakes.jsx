@@ -91,7 +91,7 @@ export const CommonMedicalBillingMistakes = ({ slug }) => {
           these common mistakes, you can improve your practice's revenue cycle
           and provide better patient care.
           <br />
-          <br /> At Carewise, we provide expert medical billing and
+          <br /> At CarewiseMBS, we provide expert medical billing and
           revenue cycle management services to healthcare providers nationwide.
           Contact us today to learn more about how we can help your practice
           thrive.

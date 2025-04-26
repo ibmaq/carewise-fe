@@ -1,11 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { solutionsData } from "@/app/(pages)/(landing)/data";
-import { solutionIcon1, solutionIcon2, solutionIcon3 } from "../UI/icons";
 
 export default function Solutions() {
   return (
-    <section className="py-20">
+    <section id="services" className="py-20">
       <div className="c-container-px flex flex-col gap-10 md:gap-16">
         <div className="flex flex-col gap-3 text-center">
           <h3 className="font-montserrat text-5xl/tight font-semibold -tracking-2">
