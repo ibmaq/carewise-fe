@@ -14,7 +14,7 @@ export default function Statement() {
       className="flex flex-col gap-5 c-container-px py-20"
     >
       <p className="text-black/40 text-base font-bold">MISSION STATEMENT</p>
-      <h3 className="text-c-text text-8 md:text-5xl leading-1.3 md:-tracking-2 font-montserrat">
+      <h3 className="text-c-text text-7 md:text-5xl leading-1.3 md:-tracking-2 font-montserrat">
         CarewiseMBS aims to empower{" "}
         <span className="font-semibold">Healthcare Providers</span> with smart &
         streamlined <span className="font-semibold">Billing Solutions</span> -

@@ -240,7 +240,7 @@ export default function Page() {
               for a review and possible full or partial refund. Refunds are
               processed within 7-14 business days. Some exceptions may apply due
               to circumstances beyond our control. Contact us at
-              ‘info@derekdawsonrcm.com’ for questions or refund requests.
+              ‘info@carewisembs.com’ for questions or refund requests.
             </p>
           </div>
           <div className="flex flex-col gap-4">
