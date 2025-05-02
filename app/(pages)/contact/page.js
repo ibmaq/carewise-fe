@@ -83,23 +83,23 @@ export default function Page() {
           </p>
         </div>
         <div className="flex max-md:flex-col gap-4">
-          <div className="w-full rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-c-sky-blue flex flex-col p-4 gap-3 font-medium">
+          <div className="w-full rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-c-sky-blue flex flex-col p-4 gap-3 md:font-medium">
             <span>{contactPhoneIcon}</span>
-            <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
+            <h4 className="font-montserrat text-xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
               (281) 540-9005
             </h4>
             <p className="text-lg/1.4">Phone Number</p>
           </div>
-          <div className="w-full bg-primary-blue flex flex-col p-4 gap-3 text-white font-medium">
+          <div className="w-full bg-primary-blue flex flex-col p-4 gap-3 text-white md:font-medium">
             <span>{contactEmailIcon}</span>
-            <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
+            <h4 className="font-montserrat text-xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
               Info@carewise.com
             </h4>
             <p className="text-lg/1.4">Email</p>
           </div>
-          <div className="w-full rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-3 font-medium">
+          <div className="w-full rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-3 md:font-medium">
             <span>{contactMapIcon}</span>
-            <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
+            <h4 className="font-montserrat text-xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
               9900 Broadway St, Pearland, TX 77584, USA
             </h4>
             <p className="text-lg/1.4">Address</p>
