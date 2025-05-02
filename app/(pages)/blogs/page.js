@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { blogsData } from "./data";
-import BlogsGrid from "./(components)/BlogsGrid";
 import { rightNEArrowIcon } from "@/app/components/UI/icons";
 import Link from "next/link";
 
@@ -12,7 +11,7 @@ export default function Blogs() {
 
   return (
     <section className="blogs">
-      <div className="header bg-primary-blue flex justify-center items-center flex-col gap-5 text-white pb-5">
+      <div className="header bg-primary-blue flex justify-center md:items-center flex-col gap-5 text-white pb-5 px-4">
         <p className="text-white/70 text-base font-bold">BLOGS</p>
         <h3 className="font-montserrat text-10.5 md:text-20.5 leading-1.2 font-medium -tracking-2">
           Carewise Resource Library

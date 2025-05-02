@@ -128,7 +128,6 @@ const MobileNav = () => {
                         ? "auto"
                         : "hidden";
                     }}
-                    scroll={false}
                   >
                     {name}
                   </Link>
