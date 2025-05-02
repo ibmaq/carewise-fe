@@ -50,24 +50,6 @@ export default function Page() {
               </div>
               <div>
                 <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
-                  Information We Collect:
-                </p>
-                <br />
-                <p className="text-lg text-gray-600 font-normal">
-                  Names, addresses, contact information.
-                </p>
-                <br />
-                <p className="text-lg text-gray-600 font-normal">
-                  Medical information: treatment plans, medical histories,
-                  diagnosis codes.
-                </p>
-                <br />
-                <p className="text-lg text-gray-600 font-normal">
-                  Financial information: billing, insurance details.
-                </p>
-              </div>
-              <div>
-                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
                   How We Protect Information:
                 </p>
                 <br />
