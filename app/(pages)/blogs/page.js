@@ -15,7 +15,7 @@ export default function Blogs() {
       <div className="header bg-primary-blue flex justify-center items-center flex-col gap-5 text-white pb-5">
         <p className="text-white/70 text-base font-bold">BLOGS</p>
         <h3 className="font-montserrat text-10.5 md:text-20.5 leading-1.2 font-medium -tracking-2">
-          CarewiseMBS Resource Library
+          Carewise Resource Library
         </h3>
         <p className="text-xl/1.4">
           Explore expert tips, industry news, and helpful resources to keep your
@@ -58,7 +58,7 @@ export default function Blogs() {
         </Link>
       )}
 
-      <div className="c-container-px flex flex-col gap-8 pb-20">
+      {/* <div className="c-container-px flex flex-col gap-8 pb-20">
         <p className="font-montserrat text-2xl/1.2">All blog posts:</p>
         {blogsData?.length >= 2 ? (
           <BlogsGrid excludeLastBlog={true} />
@@ -75,7 +75,7 @@ export default function Blogs() {
             </p>
           </div>
         )}
-      </div>
+      </div> */}
     </section>
   );
 }

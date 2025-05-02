@@ -140,7 +140,7 @@ export default function Page() {
                   <span className="text-xl/normal font-bold text-gray-700 font-montserrat">
                     Contact Us:
                   </span>{" "}
-                  For questions or concerns, contact info@carewisembs.com.
+                  For questions or concerns, contact info@carewise.com.
                 </p>
               </div>
 
@@ -154,7 +154,7 @@ export default function Page() {
             <h4>Consent Protection</h4>
             <ul className="list-disc list-outside ml-6">
               <li>
-                At CarewiseMBS, we value your privacy. When you provide us with
+                At Carewise, we value your privacy. When you provide us with
                 your consent, it remains strictly within our organization and is
                 not shared with any third parties.
               </li>
@@ -181,7 +181,7 @@ export default function Page() {
             <h4>How We Safeguard Your Data</h4>
             <div className="flex flex-col gap-4">
               <p className="text-lg text-gray-600 font-normal">
-                CarewiseMBS employs robust security measures to protect your
+                Carewise employs robust security measures to protect your
                 data, including:
               </p>
               <ul className="list-disc list-outside ml-6">
@@ -240,7 +240,7 @@ export default function Page() {
               for a review and possible full or partial refund. Refunds are
               processed within 7-14 business days. Some exceptions may apply due
               to circumstances beyond our control. Contact us at
-              ‘info@carewisembs.com’ for questions or refund requests.
+              ‘info@carewise.com’ for questions or refund requests.
             </p>
           </div>
           <div className="flex flex-col gap-4">

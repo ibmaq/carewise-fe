@@ -1,5 +1,9 @@
 "use client";
-import { contactEmailIcon, contactMapIcon } from "@/app/components/UI/icons";
+import {
+  contactEmailIcon,
+  contactMapIcon,
+  contactPhoneIcon,
+} from "@/app/components/UI/icons";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -79,14 +83,21 @@ export default function Page() {
           </p>
         </div>
         <div className="flex max-md:flex-col gap-4">
-          <div className="w-full rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-primary-blue flex flex-col p-4 gap-3 text-white">
+          <div className="w-full rounded-tl-2xl max-md:rounded-tr-2xl md:rounded-bl-2xl bg-c-sky-blue flex flex-col p-4 gap-3 font-medium">
+            <span>{contactPhoneIcon}</span>
+            <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
+              (281) 540-9005
+            </h4>
+            <p className="text-lg/1.4">Phone Number</p>
+          </div>
+          <div className="w-full bg-primary-blue flex flex-col p-4 gap-3 text-white font-medium">
             <span>{contactEmailIcon}</span>
             <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
-              Info@carewisembs.com
+              Info@carewise.com
             </h4>
             <p className="text-lg/1.4">Email</p>
           </div>
-          <div className="w-full rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-3">
+          <div className="w-full rounded-br-2xl max-md:rounded-bl-2xl md:rounded-tr-2xl bg-c-green flex flex-col p-4 gap-3 font-medium">
             <span>{contactMapIcon}</span>
             <h4 className="font-montserrat text-2xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
               9900 Broadway St, Pearland, TX 77584, USA
@@ -227,8 +238,8 @@ export default function Page() {
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white focus:shadow-sm"
             ></textarea>
             <p className="mt-2 text-xs/normal text-gray-500 italic">
-              By providing my phone number to “CarewiseMBS”, I agree and
-              acknowledge that “CarewiseMBS” may send text messages to my wireless
+              By providing my phone number to “Carewise”, I agree and
+              acknowledge that “Carewise” may send text messages to my wireless
               phone number for any purpose. Message and data rates may apply.
               Message frequency will vary, and you will be able to Opt-out by
               replying “STOP”. For more information on how your data will be

@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <div className="w-full fixed top-6.5 max-md:hidden">
-        <div className="bg-white p-3 rounded-xl flex justify-between items-center w-full max-w-navbar mx-auto shadow">
+        <div className="bg-white p-3 rounded-3xl flex justify-between items-center w-full max-w-navbar mx-auto shadow border border-c-gray-2">
           <div className="flex gap-10 items-center">
             <Link href={"/"}>
               <Image
@@ -21,6 +21,7 @@ export default function Navbar() {
                 alt="carewise-logo-colored"
                 width={166}
                 height={47.35}
+                unoptimized
               />
             </Link>
             {menuLinks.map(({ name, link }, linkID) => (

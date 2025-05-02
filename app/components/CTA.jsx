@@ -27,7 +27,7 @@ export default function CTA() {
                 height={80}
               />
               <h3 className="font-montserrat text-4xl font-semibold -tracking-2">
-                Join CarewiseMBS now to take your business to the next level!
+                Join Carewise now to take your business to the next level!
               </h3>
               <p>Make your life and billing easier, today!</p>
             </div>
