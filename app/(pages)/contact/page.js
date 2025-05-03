@@ -93,7 +93,7 @@ export default function Page() {
           <div className="w-full bg-primary-blue flex flex-col p-4 gap-3 text-white md:font-medium">
             <span>{contactEmailIcon}</span>
             <h4 className="font-montserrat text-xl max-md:font-bold md:text-6.5/1.2 md:-tracking-2">
-              Info@carewise.com
+              Info@carewisembs.com
             </h4>
             <p className="text-lg/1.4">Email</p>
           </div>

@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="flex gap-2 items-center">
               <span>{footerEmailIcon}</span>
               <p className="text-base/tight text-c-text-3 -tracking-tighter">
-                Info@Carewise.com
+                Info@Carewisembs.com
               </p>
             </div>
             <div className="flex gap-2 items-center">

@@ -122,7 +122,7 @@ export default function Page() {
                   <span className="text-xl/normal font-bold text-gray-700 font-montserrat">
                     Contact Us:
                   </span>{" "}
-                  For questions or concerns, contact info@carewise.com.
+                  For questions or concerns, contact info@carewisembs.com.
                 </p>
               </div>
 
@@ -222,7 +222,7 @@ export default function Page() {
               for a review and possible full or partial refund. Refunds are
               processed within 7-14 business days. Some exceptions may apply due
               to circumstances beyond our control. Contact us at
-              ‘info@carewise.com’ for questions or refund requests.
+              ‘info@carewisembs.com’ for questions or refund requests.
             </p>
           </div>
           <div className="flex flex-col gap-4">
