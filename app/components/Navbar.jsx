@@ -53,17 +53,19 @@ const MobileNav = () => {
         }
         `}
       >
-        <Image
-          src={"/logo-wide.png"}
-          alt="carewise-logo-colored"
-          width={136}
-          height={38.79}
-          className={`z-1 transition-opacity duration-300 ease-linear ${
-            isActive
-              ? "opacity-0 pointer-events-none"
-              : "opacity-100 pointer-events-auto delay-150"
-          }`}
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/logo-wide.png"}
+            alt="carewise-logo-colored"
+            width={136}
+            height={38.79}
+            className={`z-1 transition-opacity duration-300 ease-linear ${
+              isActive
+                ? "opacity-0 pointer-events-none"
+                : "opacity-100 pointer-events-auto delay-150"
+            }`}
+          />
+        </Link>
         <span className="xl:hidden size-8 z-1">
           <svg
             className={`text-black menu__icon ${isActive ? "active" : ""}`}
@@ -98,17 +100,19 @@ const MobileNav = () => {
             isActive ? "pt-20 p-4 h-full" : "h-0 delay-200"
           } bg-stone-100/60`}
         >
-          <Image
-            src={"/logo.png"}
-            alt="carewise-logo-colored"
-            width={100}
-            height={80}
-            className={`z-1 mx-auto py-5 transition-opacity duration-300 ease-linear ${
-              isActive
-                ? "opacity-100 pointer-events-auto delay-150"
-                : "opacity-0 pointer-events-none"
-            }`}
-          />
+          <Link href={"/"}>
+            <Image
+              src={"/logo.png"}
+              alt="carewise-logo-colored"
+              width={100}
+              height={80}
+              className={`z-1 mx-auto py-5 transition-opacity duration-300 ease-linear ${
+                isActive
+                  ? "opacity-100 pointer-events-auto delay-150"
+                  : "opacity-0 pointer-events-none"
+              }`}
+            />
+          </Link>
           <ul
             className={`text-center divide-y transition-opacity duration-300 ease-linear ${
               isActive
