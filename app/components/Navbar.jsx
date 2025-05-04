@@ -134,7 +134,13 @@ const MobileNav = () => {
                 </div>
               </li>
             ))}
-            <Link href={"/contact"}>
+            <Link
+              href={"/contact"}
+              onClick={() => {
+                setIsActive(!isActive);
+                document.body.style.overflow = isActive ? "auto" : "hidden";
+              }}
+            >
               <button className="c-btn btn-pr hover:shadow mt-5">
                 Schedule a Consultation Now!
               </button>
