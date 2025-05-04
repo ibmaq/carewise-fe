@@ -48,7 +48,7 @@ const MobileNav = () => {
   return (
     <>
       <div
-        className={`fixed top-0 w-full h-18 flex justify-between items-center p-4 md:hidden ${
+        className={`fixed top-0 w-full h-18 flex justify-between items-center p-4 md:hidden z-50 ${
           isActive ? "" : "backdrop-blur-sm bg-white/80"
         }
         `}
