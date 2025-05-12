@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -163,8 +164,8 @@ export default function Page() {
             <h4>How We Safeguard Your Data</h4>
             <div className="flex flex-col gap-4">
               <p className="text-lg text-gray-600 font-normal">
-                Carewise employs robust security measures to protect your
-                data, including:
+                Carewise employs robust security measures to protect your data,
+                including:
               </p>
               <ul className="list-disc list-outside ml-6">
                 <li>
@@ -241,6 +242,159 @@ export default function Page() {
                 promotions.
               </li>
             </ul>
+          </div>
+          <div className="flex flex-col gap-4">
+            <h4>SMS Terms & Conditions</h4>
+            <div className="flex flex-col gap-20">
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Your Rights:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  Access, review, correct, or delete your information.
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  Opt-out of marketing communications.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  SMS Consent Communication:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  The information (e.g., phone numbers) obtained as part of the
+                  SMS consent process will not be shared with third parties for
+                  marketing purposes. CAREWISE is committed to safeguarding your
+                  personal information and using it solely for purposes directly
+                  related to your care and billing services.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Types of SMS Communications:
+                </p>
+                <br />
+                <div className="flex flex-col gap-4">
+                  <p className="text-lg text-gray-600 font-normal">
+                    If you have consented to receive text messages from
+                    CAREWISE, you may receive messages related to the following:
+                  </p>
+                  <ul className="list-disc list-outside ml-6">
+                    <li>Appointment reminders</li>
+                    <li>Follow-up communications regarding your practice</li>
+                    <li>Billing updates or inquiries</li>
+                    <li>Insurance verification updates</li>
+                  </ul>
+                  <p className="text-lg text-gray-600 font-normal">
+                    <span className="font-bold">Example:</span>{" "}
+                    <span className="italic text-gray-700">
+                      “Hello, this is a friendly reminder of your upcoming
+                      appointment with your patient Mr. Smith at Midtown Clinic
+                      on May 12 at 2:00 PM. You can reply STOP to opt out of SMS
+                      messaging from CAREWISE at any time.”
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Message Frequency:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  Message frequency may vary. You may receive up to 2 SMS
+                  messages per week regarding your appointments, billing status,
+                  or account notifications. Frequency will depend on the level
+                  of activity and engagement with our services.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Potential Fees for SMS Messaging:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  Please note that standard message and data rates may apply,
+                  depending on your carrier’s pricing plan. These fees may vary
+                  if the message is sent domestically or internationally.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Opt-In Method:
+                </p>
+                <br />
+                <div className="flex flex-col gap-4">
+                  <p className="text-lg text-gray-600 font-normal">
+                    You may opt-in to receive SMS messages from CAREWISE through
+                    one or more of the following methods:
+                  </p>
+                  <ul className="list-disc list-outside ml-6">
+                    <li>
+                      Verbally, during a phone conversation with our staff
+                    </li>
+                    <li>
+                      By submitting an online form on our official website
+                    </li>
+                    <li>
+                      By completing a paper form during in-office visits or
+                      consultations
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Opt-Out Method:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  You can opt out of receiving SMS messages at any time. To do
+                  so, simply reply "STOP" to any SMS message you receive.
+                  Alternatively, you can contact us directly to request removal
+                  from our messaging list.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Help:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  If you are experiencing any issues, you can reply with the
+                  keyword HELP. Or, you can get help directly from us at
+                  https://www.carewisembs.com/contact.
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-bold">
+                  Additional Options:
+                </p>
+                <br />
+                <p className="text-lg text-gray-600 font-normal">
+                  If you do not wish to receive SMS messages, you can choose not
+                  to check the SMS consent box on our forms.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl/normal font-bold text-gray-700 font-montserrat">
+                  Standard Messaging Disclosures:
+                </p>
+                <br />
+                <ul className="list-disc list-outside ml-6">
+                  <li>Message and data rates may apply</li>
+                  <li>You can opt out at any time by texting "STOP"</li>
+                  <li>
+                    For assistance, text "HELP" or visit our{" "}
+                    <Link href={"/privacy-policy"} className="text-primary-blue">Privacy Policy</Link> and
+                    [Terms and Conditions] pages
+                  </li>
+                  <li>Message frequency may vary depending on service needs</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
