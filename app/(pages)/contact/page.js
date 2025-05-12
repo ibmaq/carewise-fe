@@ -19,6 +19,7 @@ export default function Page() {
     show: false,
     position: "",
   });
+  const [submitEnabled, setSubmitEnabled] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -237,18 +238,45 @@ export default function Page() {
               placeholder="Write text here ..."
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-primary focus:border-primary bg-gray-50 focus:bg-white focus:shadow-sm"
             ></textarea>
-            <p className="mt-2 text-xs/normal text-gray-500 italic">
-              By providing my phone number to “Carewise”, I agree and
-              acknowledge that “Carewise” may send text messages to my wireless
-              phone number for any purpose. Message and data rates may apply.
-              Message frequency will vary, and you will be able to Opt-out by
-              replying “STOP”. For more information on how your data will be
-              handled please visit{" "}
-              <Link href="/privacy-policy" className="text-primary">
-                here
-              </Link>
-              .
-            </p>
+            <div className="flex gap-3 items-start mt-2">
+              <label className="flex items-start gap-3 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  className="peer sr-only"
+                  checked={submitEnabled}
+                  onChange={() => setSubmitEnabled((prev) => !prev)}
+                />
+                <div className="w-5 h-5 shrink-0 flex items-center justify-center border-2 border-gray-300 rounded transition-colors peer-checked:border-primary peer-checked:bg-primary-blue">
+                  <svg
+                    className="mt-0.5 w-4 h-4 text-white opacity-100 peer-checked:opacity-100 transition-opacity"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p className="text-xs leading-normal text-gray-500 italic">
+                  By providing my phone number to “Carewise”, I agree and
+                  acknowledge that “Carewise” may send text messages to my
+                  wireless phone number for any purpose. Message and data rates
+                  may apply. Message frequency will vary, and you will be able
+                  to Opt-out by replying “STOP”. For more information on how
+                  your data will be handled please visit{" "}
+                  <Link
+                    href="/privacy-policy"
+                    className="text-primary underline"
+                  >
+                    here
+                  </Link>
+                  .
+                </p>
+              </label>
+            </div>
           </div>
 
           {errorConfig.show && errorConfig.position === "submit" && (
@@ -258,8 +286,12 @@ export default function Page() {
           )}
           <button
             type="submit"
-            onClick={handleSubmit}
-            className="w-full px-4 py-3 mt-2 text-white bg-primary-blue rounded-xl shadow-lg hover:bg-primary-blue focus:outline-none focus:ring-2 focus:ring-primary-blue -tracking-1 font-montserrat font-semibold"
+            onClick={submitEnabled ? handleSubmit : null}
+            className={`w-full px-4 py-3 mt-2 text-white rounded-xl shadow-lg focus:outline-none focus:ring-2  -tracking-1 font-montserrat font-semibold text ${
+              submitEnabled
+                ? "bg-primary-blue focus:ring-primary-blue hover:bg-primary-blue cursor-pointer"
+                : "bg-neutral-600 cursor-not-allowed"
+            }`}
           >
             Send Message
           </button>
